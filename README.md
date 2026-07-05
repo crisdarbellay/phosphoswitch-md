@@ -47,11 +47,15 @@ https://github.com/crisdarbellay/phosphoswitch-md/raw/master/examples/movies/MAP
 </tr>
 </table>
 
-<p align="center"><em>Trajectories rendered with VMD. Phospho variants (right column) show clear basin shift toward the hairpin conformation relative to the apo (left column).</em></p>
+<p align="center"><em>Trajectories rendered with VMD. Phospho variants (right column) show clear basin shift toward the hairpin conformation relative to apo (left column).</em></p>
 
 <p align="center">
-  <img src="examples/figures/box_rmsd30_by_residue.png" width="560" alt="Per-residue Cα RMSD boxplot — apo vs phospho, LMNA and MAPRE1"/>
-  <br><em>Cα RMSD from straight-helix reference (30-aa window, 600 ns each). Phospho simulations show systematically larger deviations — confirming phosphorylation drives conformational switching in solution.</em>
+  <img src="examples/figures/md_validation_figure.png" width="860"
+       alt="MD validation: KDE distributions of local Cα RMSD for LMNA and MAPRE1 apo vs phospho, plus switch index bar chart"/>
+  <br><em>
+  <strong>A & B</strong>: Local Cα RMSD distributions from 600 ns unbiased GROMACS simulations. Both LMNA Y45 and MAPRE1 Y247 show bimodal dynamics (two conformational basins). Phosphorylation shifts the basin occupancy (KS p &lt; 10<sup>−10</sup>), confirming phospho-driven conformational switching in solution.
+  <strong>C</strong>: Switch index across all four simulated systems — all exceed 3.2, with LMNA WT reaching 3.82.
+  </em>
 </p>
 
 ---
