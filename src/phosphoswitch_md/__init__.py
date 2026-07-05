@@ -39,7 +39,7 @@ Typical workflow
 """
 
 __version__ = "0.1.0"
-__author__ = "Cris Darby"
+__author__ = "Cris Darbellay"
 
 from .trajectory import (
     select_protein_ca,

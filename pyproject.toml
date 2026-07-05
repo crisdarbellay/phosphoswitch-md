@@ -10,7 +10,7 @@ readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.9"
 authors = [
-  { name = "Cris Darby", email = "cris.darby1@gmail.com" },
+  { name = "Cris Darbellay", email = "cris.darby1@gmail.com" },
 ]
 keywords = ["molecular dynamics", "phosphoswitch", "LMNA", "MDAnalysis", "GROMACS"]
 classifiers = [
