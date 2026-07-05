@@ -269,7 +269,7 @@ All tests use synthetic coordinate data — no GROMACS trajectory files needed.
 
 If you use this package, please cite:
 
-> Darby C. et al. (2026). Computational and NMR validation of designed
+> Darbellay C. et al. (2026). Computational and NMR validation of designed
 > phosphoswitch variants in LMNA. *In preparation*.
 
 Analysis methodology follows Tesei et al. 2025 (bioRxiv 661537).
