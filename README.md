@@ -10,6 +10,27 @@ population toward the bent-hairpin conformation.
 
 ---
 
+<p align="center">
+  <img src="examples/figures/box_rmsd30_by_residue.png" width="500" alt="Cα RMSD vs reference per residue: apo vs phospho, LMNA and MAPRE1"/>
+  <br><em>Per-residue Cα RMSD (30-aa window) from 600 ns GROMACS simulations: phosphorylated (PTR) variants show consistently larger deviation from the straight-helix reference, confirming basin shift.</em>
+</p>
+
+<p align="center">
+  <img src="examples/figures/box_contact_by_residue.png" width="500" alt="Contact map rewiring per residue: apo vs phospho"/>
+  <br><em>Phosphorylation-driven contact rewiring. Jaccard distance from apo contact map peaks at Y45 (position 30 in the 59-aa construct) in the phospho simulations.</em>
+</p>
+
+**MD movies** (600 ns trajectories rendered with VMD):
+
+| System | Movie |
+|---|---|
+| LMNA WT apo | [LMNA_WT.mp4](examples/movies/LMNA_WT.mp4) |
+| LMNA phospho (PTR) | [LMNA_PTR.mp4](examples/movies/LMNA_PTR.mp4) |
+| MAPRE1 WT apo | [MAPRE1_WT.mp4](examples/movies/MAPRE1_WT.mp4) |
+| MAPRE1 phospho (PTR) | [MAPRE1_PTR.mp4](examples/movies/MAPRE1_PTR.mp4) |
+
+---
+
 ## Why MD is needed for this paper
 
 Protein design produces sequences predicted (by AlphaFold3) to adopt two
