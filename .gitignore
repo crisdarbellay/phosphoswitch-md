@@ -1,0 +1,82 @@
+# -----------------------------------------------------------------------
+# GROMACS trajectory files — NEVER commit these (files are 1–10 GB each)
+# -----------------------------------------------------------------------
+*.xtc
+*.trr
+*.tpr
+*.edr
+*.cpt
+*.dcd
+*.nc
+*.ncdf
+*.crd
+*.trz
+*.mdp
+
+# GROMACS other large binary outputs
+*.gro.gz
+*.pdb.gz
+topol.tpr
+mdout.mdp
+
+# -----------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.env
+.venv
+env/
+venv/
+*.pyc
+
+# -----------------------------------------------------------------------
+# Jupyter
+# -----------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb
+
+# -----------------------------------------------------------------------
+# OS / editor
+# -----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# -----------------------------------------------------------------------
+# Analysis outputs (large)
+# -----------------------------------------------------------------------
+# Exclude large analysis directories (keep only CSVs and PDFs by default)
+md_results/
+prod_outputs/
+af3_refs/
+
+# Keep configuration and code
+!config/
+!scripts/
+!src/
+__pycache__/
+*.pyc
+.egg-info/
+.pytest_cache/
+*.log
+*.xtc
+*.trr
+*.tpr
+*.edr
+*.cpt
+*.dcd
+*.nc
+*.gro
+results/

@@ -1,0 +1,74 @@
+# phosphoswitch-md default configuration
+# All values can be overridden on the command line.
+
+# ------------------------------------------------------------------
+# System definition
+# ------------------------------------------------------------------
+system:
+  # Residue number of the phospho-tyrosine in the ±29 aa construct
+  phos_resnum: 30
+  # Total length of the LMNA Y45 construct (59 aa)
+  n_residues: 59
+  # Phospho-residue names to include in CA selection
+  phos_resnames: ["PTR", "SEP", "TPO", "TP1", "TP2"]
+
+# ------------------------------------------------------------------
+# Trajectory sampling
+# ------------------------------------------------------------------
+trajectory:
+  # Stride for MDAnalysis-native analyses (reduce for speed)
+  n_sample_frames: 1000
+  # For contact maps and clustering (lighter)
+  n_sample_contact_maps: 200
+  # Frames per replicate for topology clustering
+  n_frames_per_rep_clustering: 150
+  # Start time (ps) for RMSF: skip first 20% (default: 120 ns of 600 ns)
+  rmsf_start_ps: 120000
+
+# ------------------------------------------------------------------
+# RMSD/contact cutoffs
+# ------------------------------------------------------------------
+analysis:
+  # Kabsch-aligned Cα RMSD thresholds for basin assignment (Angstroms)
+  strict_basin_threshold_A: 4.0   # tight basin membership
+  loose_basin_threshold_A: 7.0    # loose / transient visit
+
+  # Cα-Cα distance for contact maps (Angstroms)
+  contact_cutoff_A: 8.0
+
+  # Phosphate-residue contact cutoff (Angstroms, any heavy atom to P)
+  phos_contact_cutoff_A: 5.0
+
+  # Sequence-neighbor masking in contact maps (i±k contacts masked)
+  contact_seq_mask: 2
+
+# ------------------------------------------------------------------
+# Clustering
+# ------------------------------------------------------------------
+clustering:
+  n_clusters: 5
+  method: "agglomerative"   # or "kmeans"
+
+# ------------------------------------------------------------------
+# GROMACS group indices (typical CHARMM-GUI protein-in-water systems)
+# ------------------------------------------------------------------
+gromacs:
+  # Group index for C-alpha atoms (passed to gmx rms, rmsf as stdin)
+  ca_group: "3"
+  # Group for protein output
+  protein_group: "1"
+  # Binary name
+  gmx_binary: "gmx"
+
+# ------------------------------------------------------------------
+# Figure output
+# ------------------------------------------------------------------
+figures:
+  dpi: 120
+  timeseries_format: "pdf"    # or "png"
+  scatter_format: "png"
+  # Color palette (CSS hex)
+  apo_color: "#2E86AB"
+  phos_color: "#A23B72"
+  apo_ref_color: "#0d3b66"
+  phos_ref_color: "#7b1fa2"
