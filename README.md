@@ -10,24 +10,49 @@ population toward the bent-hairpin conformation.
 
 ---
 
-<p align="center">
-  <img src="examples/figures/box_rmsd30_by_residue.png" width="500" alt="Cα RMSD vs reference per residue: apo vs phospho, LMNA and MAPRE1"/>
-  <br><em>Per-residue Cα RMSD (30-aa window) from 600 ns GROMACS simulations: phosphorylated (PTR) variants show consistently larger deviation from the straight-helix reference, confirming basin shift.</em>
-</p>
+**600 ns unbiased GROMACS trajectories — LMNA and MAPRE1, apo vs. phospho:**
+
+<table align="center">
+<tr>
+<td align="center"><strong>LMNA WT  —  apo</strong></td>
+<td align="center"><strong>LMNA WT  —  phospho (PTR45)</strong></td>
+</tr>
+<tr>
+<td>
+
+https://github.com/crisdarbellay/phosphoswitch-md/raw/master/examples/movies/LMNA_WT.mp4
+
+</td>
+<td>
+
+https://github.com/crisdarbellay/phosphoswitch-md/raw/master/examples/movies/LMNA_PTR.mp4
+
+</td>
+</tr>
+<tr>
+<td align="center"><strong>MAPRE1 WT  —  apo</strong></td>
+<td align="center"><strong>MAPRE1 WT  —  phospho (PTR247)</strong></td>
+</tr>
+<tr>
+<td>
+
+https://github.com/crisdarbellay/phosphoswitch-md/raw/master/examples/movies/MAPRE1_WT.mp4
+
+</td>
+<td>
+
+https://github.com/crisdarbellay/phosphoswitch-md/raw/master/examples/movies/MAPRE1_PTR.mp4
+
+</td>
+</tr>
+</table>
+
+<p align="center"><em>Trajectories rendered with VMD. Phospho variants (right column) show clear basin shift toward the hairpin conformation relative to the apo (left column).</em></p>
 
 <p align="center">
-  <img src="examples/figures/box_contact_by_residue.png" width="500" alt="Contact map rewiring per residue: apo vs phospho"/>
-  <br><em>Phosphorylation-driven contact rewiring. Jaccard distance from apo contact map peaks at Y45 (position 30 in the 59-aa construct) in the phospho simulations.</em>
+  <img src="examples/figures/box_rmsd30_by_residue.png" width="560" alt="Per-residue Cα RMSD boxplot — apo vs phospho, LMNA and MAPRE1"/>
+  <br><em>Cα RMSD from straight-helix reference (30-aa window, 600 ns each). Phospho simulations show systematically larger deviations — confirming phosphorylation drives conformational switching in solution.</em>
 </p>
-
-**MD movies** (600 ns trajectories rendered with VMD):
-
-| System | Movie |
-|---|---|
-| LMNA WT apo | [LMNA_WT.mp4](examples/movies/LMNA_WT.mp4) |
-| LMNA phospho (PTR) | [LMNA_PTR.mp4](examples/movies/LMNA_PTR.mp4) |
-| MAPRE1 WT apo | [MAPRE1_WT.mp4](examples/movies/MAPRE1_WT.mp4) |
-| MAPRE1 phospho (PTR) | [MAPRE1_PTR.mp4](examples/movies/MAPRE1_PTR.mp4) |
 
 ---
 
